@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#070b15">
+  <title>Home | Debeswar Mishra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .wa-icon {
+      width: 17px;
+      height: 17px;
+      vertical-align: middle;
+      flex: none
+    }
+
+    .socials a:has(.wa-icon) {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px
+    }
+  </style>
+  <style>
+    .github-mark {
+      display: inline-grid;
+      place-items: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #dce6f5;
+      color: #080d18;
+      font-size: 9px;
+      font-weight: 800
+    }
+
+    .social-placeholder {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      opacity: .85;
+      cursor: default
+    }
+  </style>
+</head>
+
+<body>
+  <div id="scrollProgress" aria-hidden="true"></div>
+  <header>
+    <nav class="wrap"><a class="brand" href="index.html">DM <b>·</b> Debeswar Mishra</a>
+      <div class="links"><a class="active" href="index.html">Home</a><a class="" href="about.html">About</a><a class=""
+          href="services.html">Services</a><a class="" href="work.html">Work</a><a class=""
+          href="skills.html">Skills</a><a class="" href="cv.html">CV</a><a class="" href="contact.html">Contact</a>
+      </div><a class="hire" href="contact.html">Hire Me ↗</a><button class="theme-toggle" id="themeToggle" type="button"
+        aria-label="Toggle light and dark theme">☀ / ☾</button>
+    </nav>
+  </header>
+  <main class="wrap home-main reference-home">
+    <section class="reference-hero">
+      <div class="reference-photo">
+        <div class="portrait-orbit"></div>
+        <div class="portrait-aura"></div>
+        <img src="debeswar-profile.png" alt="Debeswar Mishra">
+      </div>
+
+      <div class="reference-copy">
+        <div class="availability"><i></i> Available for opportunities</div>
+        <h1>Debeswar <span>Mishra</span></h1>
+        <h2>Data Analytics with Python <b>|</b> <em>Full Stack Developer</em></h2>
+        <p class="reference-lead">Turning data into insights and ideas into reality with Python and modern web
+          technologies.</p>
+
+        <div class="tech-strip">
+          <span><b class="tech-python">Py</b> Python</span>
+          <span><b class="tech-chart">▥</b> Data Analytics</span>
+          <span><b class="tech-django">Dj</b> Django</span>
+          <span><b class="tech-db">▤</b> MySQL</span>
+          <span><b class="tech-web">&lt;/&gt;</b> HTML &amp; CSS</span>
+        </div>
+
+        <div class="reference-actions">
+          <a class="resume-gradient" href="Debeswar-Mishra-CV.pdf" target="_blank" rel="noopener"><span>↓</span>
+            Download Resume <b>›</b></a>
+          <a class="hire-outline" href="contact.html"><span>↗</span> Hire Me</a>
+        </div>
+
+        <div class="reference-status"><i></i> Open to opportunities and collaborations</div>
+        <div class="reference-socials">
+          <a href="https://wa.me/918457940290" target="_blank" rel="noopener"><b>◉</b> WhatsApp ↗</a>
+          <a href="https://www.instagram.com/debeswar_mishra?psln=MTRmZ2NpdHVtN3dxOA==" target="_blank"
+            rel="noopener"><b>◎</b> Instagram ↗</a>
+          <a href="https://www.linkedin.com/in/debeswar-mishra-b89774370?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank" rel="noopener"><b>in</b> LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reference-bottom">
+      <div class="focus-panel">
+        <a href="skills.html"><span class="focus-icon">▥</span><span><b>Data Analytics</b><small>Python · Excel ·
+              SQL</small></span><i>↗</i></a>
+        <a href="services.html"><span class="focus-icon">⌘</span><span><b>Full Stack Python</b><small>Python · Django ·
+              MySQL</small></span><i>↗</i></a>
+        <a href="work.html"><span class="focus-icon">▣</span><span><b>Projects &amp; Work</b><small>Explore my practical
+              work</small></span><i>↗</i></a>
+      </div>
+      <a class="resume-card" href="cv.html"><span class="resume-file">▤</span><span><b>Resume</b><small>View / Download
+            My CV</small></span><i>›</i></a>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap foot"><span>© 2026 Debeswar Mishra</span><span>Data Analytics with Python · Full Stack
+        Developer</span><a href="contact.html">Contact ↗</a></div>
+  </footer><button id="backTop" type="button" aria-label="Back to top">↑</button>
+  <script>
+    (function () {
+      const saved = localStorage.getItem("dm-theme");
+      if (saved === "light") document.body.classList.add("light-mode");
+      const toggle = document.getElementById("themeToggle");
+      if (toggle) toggle.addEventListener("click", () => { document.body.classList.toggle("light-mode"); localStorage.setItem("dm-theme", document.body.classList.contains("light-mode") ? "light" : "dark"); });
+      const bar = document.getElementById("scrollProgress"), topBtn = document.getElementById("backTop");
+      function update() { const max = document.documentElement.scrollHeight - window.innerHeight; bar.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + "%"; topBtn.style.display = window.scrollY > 260 ? "block" : "none"; }
+      window.addEventListener("scroll", update, { passive: true }); update();
+      topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    })();
+  </script>
+</body>
+
+</html>

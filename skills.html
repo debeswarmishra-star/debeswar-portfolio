@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b15"><title>Skills | Debeswar Mishra</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><div id="scrollProgress" aria-hidden="true"></div><header><nav class="wrap"><a class="brand" href="index.html">DM <b>·</b> Debeswar Mishra</a><div class="links"><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class="" href="services.html">Services</a><a class="" href="work.html">Work</a><a class="active" href="skills.html">Skills</a><a class="" href="cv.html">CV</a><a class="" href="contact.html">Contact</a></div><a class="hire" href="contact.html">Hire Me ↗</a><button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme">☀ / ☾</button></nav></header><main class="wrap"><div class="page-head"><div class="eyebrow">04 / Skills</div><h1>My <em>Toolbox.</em></h1><p>Technologies and areas of focus for data analytics and full stack development.</p></div><div class="card-grid"><div class="card"><h3>Programming</h3><p>Python · Java · C (Basic)</p></div><div class="card"><h3>Web Development</h3><p>HTML · CSS · JavaScript · Django · React (learning)</p></div><div class="card"><h3>Data & Database</h3><p>Data Analytics with Python · SQL · MySQL</p></div></div>
+<section style="margin-top:34px">
+  <div class="page-head"><div class="eyebrow">Skills / Focus Areas</div><h2>Skills <em>Overview.</em></h2>
+  <p>Visual overview of the technologies listed in the portfolio. Update the bar lengths to match your current confidence.</p></div>
+  <div class="card">
+    <div class="skill-row"><div class="skill-meta"><span>Python</span><span>Core focus</span></div><div class="progress-track"><div class="progress-fill" style="--level:78%"></div></div></div>
+    <div class="skill-row"><div class="skill-meta"><span>HTML & CSS</span><span>Web development</span></div><div class="progress-track"><div class="progress-fill" style="--level:82%"></div></div></div>
+    <div class="skill-row"><div class="skill-meta"><span>JavaScript</span><span>Web development</span></div><div class="progress-track"><div class="progress-fill" style="--level:62%"></div></div></div>
+    <div class="skill-row"><div class="skill-meta"><span>Django</span><span>Backend development</span></div><div class="progress-track"><div class="progress-fill" style="--level:68%"></div></div></div>
+    <div class="skill-row"><div class="skill-meta"><span>SQL / MySQL</span><span>Database</span></div><div class="progress-track"><div class="progress-fill" style="--level:65%"></div></div></div>
+  </div>
+  <p style="font-size:11px">Note: These are editable visual indicators, not test scores or certified proficiency ratings.</p>
+</section>
+</main><footer><div class="wrap foot"><span>© 2026 Debeswar Mishra</span><span>Data Analytics with Python · Full Stack Developer</span><a href="contact.html">Contact ↗</a></div></footer><button id="backTop" type="button" aria-label="Back to top">↑</button><script>
+(function(){
+ const saved=localStorage.getItem("dm-theme");
+ if(saved==="light") document.body.classList.add("light-mode");
+ const toggle=document.getElementById("themeToggle");
+ if(toggle) toggle.addEventListener("click",()=>{document.body.classList.toggle("light-mode");localStorage.setItem("dm-theme",document.body.classList.contains("light-mode")?"light":"dark");});
+ const bar=document.getElementById("scrollProgress"), topBtn=document.getElementById("backTop");
+ function update(){const max=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(max>0?(window.scrollY/max)*100:0)+"%";topBtn.style.display=window.scrollY>260?"block":"none";}
+ window.addEventListener("scroll",update,{passive:true}); update();
+ topBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+})();
+</script></body></html>

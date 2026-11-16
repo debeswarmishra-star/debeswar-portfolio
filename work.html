@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b15"><title>Work | Debeswar Mishra</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><div id="scrollProgress" aria-hidden="true"></div><header><nav class="wrap"><a class="brand" href="index.html">DM <b>·</b> Debeswar Mishra</a><div class="links"><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class="" href="services.html">Services</a><a class="active" href="work.html">Work</a><a class="" href="skills.html">Skills</a><a class="" href="cv.html">CV</a><a class="" href="contact.html">Contact</a></div><a class="hire" href="contact.html">Hire Me ↗</a><button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme">☀ / ☾</button></nav></header><main class="wrap"><div class="page-head"><div class="eyebrow">03 / Portfolio</div><h1>Selected <em>Work.</em></h1><p>A growing collection of practical projects. Add live links and screenshots as each project is published.</p></div><div class="card-grid"><div class="card"><h3>College Management System</h3><p>Django project concept for student records and college workflows.</p><span class="tag">Python</span><span class="tag">Django</span><span class="tag">MySQL</span></div><div class="card"><h3>Personal Portfolio</h3><p>Responsive multi-page portfolio with dedicated CV and contact pages.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><div class="card"><h3>Data Analytics Project</h3><p>Space reserved for a Python data analysis project and its findings.</p><span class="tag">Python</span><span class="tag">Data Analytics</span></div></div>
+<section style="margin-top:34px">
+  <div class="page-head"><div class="eyebrow">Data / Insights</div><h2>Data Analytics <em>Showcase.</em></h2>
+  <p>A dedicated space to present real datasets, analysis steps, charts and findings as projects are completed.</p></div>
+  <div class="analytics-grid">
+    <div class="metric"><strong>Python</strong><span>Data cleaning and analysis</span></div>
+    <div class="metric"><strong>SQL</strong><span>Querying and database work</span></div>
+    <div class="metric"><strong>Visuals</strong><span>Charts, patterns and insights</span></div>
+  </div>
+  <div class="card" style="margin-top:16px"><h3>Project case-study format</h3>
+    <p>For each future analytics project, add the problem statement, dataset source, tools used, key charts, findings and a GitHub or live-project link. No sample results are shown as real results.</p>
+    <span class="tag">Problem</span><span class="tag">Dataset</span><span class="tag">Analysis</span><span class="tag">Insights</span>
+  </div>
+</section>
+</main><footer><div class="wrap foot"><span>© 2026 Debeswar Mishra</span><span>Data Analytics with Python · Full Stack Developer</span><a href="contact.html">Contact ↗</a></div></footer><button id="backTop" type="button" aria-label="Back to top">↑</button><script>
+(function(){
+ const saved=localStorage.getItem("dm-theme");
+ if(saved==="light") document.body.classList.add("light-mode");
+ const toggle=document.getElementById("themeToggle");
+ if(toggle) toggle.addEventListener("click",()=>{document.body.classList.toggle("light-mode");localStorage.setItem("dm-theme",document.body.classList.contains("light-mode")?"light":"dark");});
+ const bar=document.getElementById("scrollProgress"), topBtn=document.getElementById("backTop");
+ function update(){const max=document.documentElement.scrollHeight-window.innerHeight;bar.style.width=(max>0?(window.scrollY/max)*100:0)+"%";topBtn.style.display=window.scrollY>260?"block":"none";}
+ window.addEventListener("scroll",update,{passive:true}); update();
+ topBtn.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+})();
+</script></body></html>
